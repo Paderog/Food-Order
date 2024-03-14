@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="log.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Login</title>
 </head>
 <body>
     <div class="container">
         <div class="form-box">  
-            <form action="#" class="LoginForm">
+            <form action="/homepage.html" class="LoginForm">
                 <h2>Login</h2>
                 <div class="input-box">
                     <input type="text" required>
-                    <label>Full Name</label>
+                    <label>Username</label>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
@@ -31,14 +31,14 @@
                 </div>
                 <button class="btn">Sign in</button>
                 <div class="account-creation">
-                    <span>Don't have an account? <a href="#"class="RegisterLink">Register</a></span>
+                
                 </div>
             </form> 
                     <form action="#" class="RegisterForm">
                         <h2>Register</h2>
                         <div class="input-box">
                             <input type="text" required>
-                            <label>Full Name</label>
+                            <label>Username</label>
                             <i class='bx bxs-user'></i>
                         </div>
                         <div class="input-box">
@@ -53,12 +53,12 @@
                         </div>
                         <button class="btn">Sign up</button>
                         <div class="account-creation">
-                            <span>Already have an account? <a href="#" class="LoginLink">Login</a></span>
+                            <span>Already have an account? <a href="/home.html" class="LoginLink">Login</a></span>
                         </div>
                     </form>
         </div>
     </div>
-    ><script>
+    <script>
         const LoginForm = document.querySelector('.LoginForm');
         const RegisterForm = document.querySelector('.RegisterForm');
         const RegisterLink = document.querySelector('.RegisterLink');

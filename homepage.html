@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Ice Cream</title>
+    <title>Menu</title>
+    <script src="data.js"></script>
 </head>
 <body>
+    <div class="alert">
+        <div>Successfully Ordered</div>
+    </div>
     <div class="sidebar">
-
         <h1 class="logo">Belly Shack</h1>
-
         <div class="sidebar-menu">
-            <a href="home.html"><ion-icon name="storefront-outline"></ion-icon>Home</a>
-            <a href="menu.html"><ion-icon name="menu-outline"></ion-icon>Menu</a>
-            <a href="res.html"><ion-icon name="map-outline"></ion-icon>Restaurant</a>
-            <a href="cont.html"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a>
-            <a href="sett.html"><ion-icon name="settings-outline"></ion-icon>About Us</a>
+            <a href="homepage.html"><ion-icon name="car-sport-outline"></ion-icon>Order</a>
+            <a href="location.html"><ion-icon name="map-outline"></ion-icon>Location</a>
+            <a href="contact.html"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a>
         </div>
-
         <div class="sidebar-logout">
-            <a href="home.html"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+            <a href="index.html"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
         </div>
+    </div>
+    <div class="orderbar">
+        <h1 class="logo">Order</h1>
+        <div class ="orders">
+       
+        </div>
+      
+        <div class = "order-total">
+            <div id ="total">0.00</div>
+            <div class = "close">Close</div>
+        </div>
+      
     </div>
 
     <div class="main">
@@ -31,19 +42,17 @@
             <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
 
             <div class="search">
-                <input type="text" placeholder="Lets mEAT Here">
-                <button class="search-btn">Search</button>
+                <input id= "search" type="text" placeholder="Lets mEAT Here">
+                
             </div>
 
             <div class="profile">
-                <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
-                <a class="user" href="login.html"><ion-icon name="person-outline"></ion-icon></a>
+                <a class="cart" id ="cart"><ion-icon name="cart-outline"></ion-icon></a>  
             </div>
 
         </div>
 
-        <div class="main-highlight">
-            
+        <div class="main-highlight">  
             <div class="main-header">
                 <h2 class="main-title">Recommendations</h2>
                 <div class="main-arrow">
@@ -80,7 +89,7 @@
                         <p>₱288.00</p>
                     </div>
                 </div>
-            </div>x`
+            </div>
         </div>
         <div class="main-menu">
 
@@ -92,130 +101,142 @@
                         <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
                     </div>
                 </div>
-                <div class="filter-wrapper">
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                           <a href="page.html"><ion-icon name="restaurant-outline"></ion-icon></a>
-                        </div>
-                        <p>All Menus</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                            <a href="burger.html"><ion-icon name="fast-food-outline"></ion-icon></a>
-                        </div>
-                        <p>Burger</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                            <a href="hotdog.html"><ion-icon name="fast-food-outline"></ion-icon></a>
-                        </div>
-                        <p>Hotdog</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                            <a href="pizz.html"><ion-icon name="pizza-outline"></ion-icon></a>
-                        </div>
-                        <p>Pizza</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                            <a href="spag.html"><ion-icon name="spaghetti-outline"></ion-icon></a>
-                        </div>
-                        <p>Pasta</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                           <a href="cream.html"><ion-icon name="ice-cream-outline"></ion-icon></a> 
-                        </div>
-                        <p>HouseBlends</p>
-                    </div>
-                    <div class="filter-card">
-                        <div class="filter-icon">
-                            <a href="cafe.html"><ion-icon name="cafe-outline"></ion-icon></a>
-                        </div>
-                        <p>Coffee</p>
-                    </div>
-                </div>
+                <div class="filter-wrapper"></div>
             </div>
             <hr class="divider">
 
             <div class="main-detail">
-                <h2 class="main-title">HouseBlends</h2>
+                <h2 class="main-title">Choose Order</h2>
                 <div class="detail-wrapper">
                     <div class="detail-card">
-                        <img class="detail-img" src="image/hot.jpg">
+                        <img class="detail-img" src="image/jjj.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Hot Chocolate</h4>
-                                <p class="detail-sub"></p>
-                                <p class="price">₱98.00</p>
+                                <h4>Incubus JR.</h4>
+                                <p class="detail-sub">100% Pure Beef Double Patty, Cheese, Lettuce, Beef Bacon, Mushrooms & BBQ Sauce</p>
+                                <p class="price">₱235.00</p>
                             </div>
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                     </div>
                     <div class="detail-card">
-                        <img class="detail-img" src="image/tea.jpg">
+                        <img class="detail-img" src="image/h.jpg">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Ice Tea Glass</h4>
-                                <p class="detail-sub"></p>
-                                <p class="price">₱65.00</p>
+                                <h4>ChiliDog Overload</h4>
+                                <p class="detail-sub">Premium Hotdog, Chili con carne, Cheddar cheese, Cheese sauce Jalapeno peppers</p>
+                                <p class="price">₱235.00</p>
                             </div>
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                     </div>
                     <div class="detail-card">
-                        <img class="detail-img" src="image/ice.jfif">
+                        <img class="detail-img" src="image/wings.jfif">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Ice Tea Pitcher</h4>
+                                <h4>Buffalo</h4>
                                 <p class="detail-sub"></p>
-                                <p class="price">₱120.00</p>
+                                <p class="price">₱298.00</p>
                             </div>
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                     </div>
                     <div class="detail-card">
-                        <img class="detail-img" src="image/choco.jpg">
+                        <img class="detail-img" src="image/taco.jfif">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Chocolate Milkshake</h4>
+                                <h4>Taco's</h4>
                                 <p class="detail-sub"></p>
-                                <p class="price">₱198.00</p>
+                                <p class="price">₱145.00</p>
                             </div>
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                     </div>
                     <div class="detail-card">
-                        <img class="detail-img" src="image/vanilla.jpg">
+                        <img class="detail-img" src="image/pasta.jfif">
                         <div class="detail-desc">
                             <div class="detail-name">
-                                <h4>Vanilla Milkshake</h4>
+                                <h4>Hearty Spaghetti Marinara</h4>
                                 <p class="detail-sub"></p>
-                                <p class="price">₱198.00</p>
+                                <p class="price">₱224.00</p>
                             </div>
                             <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                         </div>
                 </div>
                 <div class="detail-card">
-                    <img class="detail-img" src="image/cookies.jpg">
+                    <img class="detail-img" src="image/pizza.jfif">
                     <div class="detail-desc">
                         <div class="detail-name">
-                            <h4>Cookies & Cream Milkshake</h4>
-                            <p class="detail-sub"></p>
-                            <p class="price">₱198.00</p>
+                            <h4>Margherita</h4>
+                            <p class="detail-sub">Marinara Sauce, Mozzarella, Cheddar Cheese, Parmesan, Basil</p>
+                            <p class="price">₱242.00</p>
                         </div>
                         <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                     </div>
             </div>
             <div class="detail-card">
-                <img class="detail-img" src="image/straw.jfif">
+                <img class="detail-img" src="image/belly.jpg">
                 <div class="detail-desc">
                     <div class="detail-name">
-                        <h4>Strawberry Milkshake</h4>
+                        <h4>Crispy Pork Belly</h4>
                         <p class="detail-sub"></p>
-                        <p class="price">₱198.00</p>
+                        <p class="price">₱298.00</p>
                     </div>
+                        <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="image/chicken.jpeg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Deep Fried Chicken</h4>
+                            <p class="detail-sub"></p>
+                            <p class="price">₱298.00</p>
+                        </div>
+                        <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="image/steak.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Burger Steak</h4>
+                            <p class="detail-sub"></p>
+                            <p class="price">₱278.00</p>
+                        </div>
+                        <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="image/soda.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Soda</h4>
+                            <p class="detail-sub"></p>
+                            <p class="price">₱68.00</p>
+                        </div>
+                        <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="image/coffee.jpeg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Coffee</h4>
+                            <p class="detail-sub"></p>
+                            <p class="price">₱90.00</p>
+                        </div>
+                        <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="image/choco.jpg">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Chocolate Milkshake</h4>
+                            <p class="detail-sub"></p>
+                            <p class="price">₱198.00</p>
+                        </div>
                         <ion-icon class="detail-favorites" name="bookmark-outline"></ion-icon>
                     </div>
                 </div>
@@ -230,4 +251,5 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="app.js"></script>
+<script src="main.js"></script>
 </html>

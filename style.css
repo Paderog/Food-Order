@@ -18,6 +18,7 @@ body{
     width: 100%;
     height: auto;
     display: flex;
+    background-color: var(--softGreenColor);
 }
 .sidebar{
     height: 100%;
@@ -51,13 +52,18 @@ body{
 }
 .main{
     width: 100%;
-    height: max-content;
+    
     min-height: 100vh;
     padding: 2%;
-    background-color: var(--softGreenColor);
+   
     margin-left: 250px;
 }
 .main-navbar{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: black;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,6 +233,11 @@ body{
     background-color: var(--softGreenColor);
     color: var(--primaryColor);
     border-radius: 8px;
+    color: red;
+}
+.filter-icon > img{
+    width: 30px;
+    height: 30px;
 }
 .filter-card:hover{
     background-color: var(--primaryColor);
@@ -300,7 +311,140 @@ body{
 .detail-card:hover .price{
     letter-spacing: 1.5;
 }
+.alert{
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    height: 100%;display: grid;
+    place-items: center;
+    display: none;
+}
+.alert > div{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    width: 50%;
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
 
+    z-index: 10;    
+    display: grid;
+    place-items: center;
+}
+
+.orderbar{
+    height: 100%;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    padding: 2%;
+    background-color: #423A38;
+    color: var(--whiteColor);
+}
+.orders{
+    height: 70vh;
+    overflow: auto;
+ 
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+ 
+}
+.order-image{
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50px;
+    margin-right: 5px;
+    
+ 
+}
+.order-name{
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+
+    line-break: anywhere;
+    width:  120px;
+    min-width: 120px;
+}
+
+.order-price{
+   flex-grow: 1;
+   display: grid;
+   padding: 0 3px 0 3px;
+   place-items: center;
+    width: 100px;
+}
+.order-button{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    }
+    .order-button > button{
+       width: 30px;
+       height: 30px;
+       background-color: #857D7B;
+       outline: 0;
+       font-size: 1em;
+       border: 0;
+       font-weight: bold;
+
+cursor: pointer;
+    }
+
+.order-total{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rebeccapurple;
+    height: 80px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+}
+.order-total >div{
+
+    width: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
+}
+#total{
+    background-color: black;
+    color: #BB9C38;
+ 
+}
+#total:hover{
+    background-color: #BB9C38;
+    color: black;
+    cursor: pointer;
+}
+.close{
+    background-color: grey;
+    color: white;
+}
+.close:hover{
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+}
 @media screen and (max-width:640px) {
     .sidebar{
         display: none;
