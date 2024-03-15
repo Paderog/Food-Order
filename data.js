@@ -1,4 +1,4 @@
-burgers = {
+const burgers = {
   'Incubus JR.': {
     type: 'burger',
     desc: '100% Pure Beef Double Patty, Cheese, Lettuce, Beef Bacon, Mushrooms & BBQ Sauce',
@@ -97,7 +97,7 @@ burgers = {
   },
 };
 
-hotdogs = {
+const hotdogs = {
   'ChiliDog Ala Castro': {
     type: 'hotdog',
     desc: 'Premium Hotdog, Chili con carne, Cheddar Cheese',
@@ -129,7 +129,7 @@ hotdogs = {
     img: 'image/hotdog.jpg',
   },
 };
-wings = {
+const wings = {
   'Buffalo Wings': {
     type: 'wings',
     desc: '',
@@ -149,7 +149,7 @@ wings = {
     img: 'image/ggg.jpg',
   },
 };
-desserts = {
+const desserts = {
   'Leche Flan': {
     type: 'hotdog',
     desc: '',
@@ -169,7 +169,7 @@ desserts = {
     img: 'image/ddd.jpg',
   },
 };
-pizzas = {
+const pizzas = {
   Peperoni: {
     type: 'pizza',
     desc: 'Marinara sauce, Pepperoni, Mozarella, Cheddar Cheese, Parmesan',
@@ -219,7 +219,7 @@ pizzas = {
     img: 'image/download.jfif',
   },
 };
-tacos = {
+const tacos = {
   "Gringo's Taco": {
     type: 'taco',
     desc: '',
@@ -240,7 +240,7 @@ tacos = {
   },
 };
 
-fries = {
+const fries = {
   'French Fries': {
     type: 'fries',
     desc: '',
@@ -261,7 +261,7 @@ fries = {
   },
 };
 
-pasta = {
+const pasta = {
   'Classic Spaghetti': {
     type: 'pasta',
     desc: '',
@@ -299,7 +299,7 @@ pasta = {
     img: 'image/meat.jpg',
   },
 };
-drinks = {
+const drinks = {
   Soda: {
     type: 'drink',
     desc: '',
@@ -332,7 +332,7 @@ drinks = {
   },
 };
 
-blends = {
+const blends = {
   'Hot Chocolate': {
     type: 'blends',
     desc: '',
@@ -377,7 +377,7 @@ blends = {
   },
 };
 
-coffee = {
+const coffee = {
   Americano: {
     type: 'coffee',
     desc: '',
@@ -416,7 +416,7 @@ coffee = {
   },
 };
 
-let kinds_of_menu = {
+const kinds_of_menu = {
   0: {
     ID: 'burger',
     items: burgers,
@@ -487,3 +487,5 @@ let kinds_of_menu = {
     title: 'Coffees',
   },
 };
+
+export default kinds_of_menu;
